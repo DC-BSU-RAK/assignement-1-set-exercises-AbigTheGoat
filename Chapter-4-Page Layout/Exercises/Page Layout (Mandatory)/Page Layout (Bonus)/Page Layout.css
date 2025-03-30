@@ -1,92 +1,100 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;         /* Defualt Font of Page */
     margin: 0;
     padding: 0;
-    color: #000;
+    color: #000;                /* Sets text color to Black */
 }
 
 header {
-    background: #17072b;
+    background: #17072b;            /* Dark background for header */
     color: white;
-    text-align: center;
+    text-align: center;                 /* Centers Header text */
     padding: 20px;
     font-family: Tahoma, sans-serif;
-    font-weight: 700;
+    font-weight: 900;                       /* Makes font bolded */
     text-decoration: underline;
 }
 
 nav ul {
-    list-style: none;
+    list-style: none;                   /* Removes Bullet points in list */
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
+    display: flex;                      /* makes list items in a row */
+    justify-content: center;                /* centers items in list horizontally */
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 15px;                        /* adds horizontal spacing between nav items */
 }
 
 nav ul li a {
-    color: white;
+    color: white;                           /* Sets link color to white  */
     text-decoration: none;
     font-weight: bold;
-    font-family: Tahoma;
+    font-family: Tahoma;                /* Changes font to Tahoma */
 }
 
+/* Main content area styling */
 main {
-    display: flex;
-    padding: 30px;
+    display: flex;                  
     justify-content: space-between;
+    padding: 0 30px;
 }
 
 .welcome {
     flex: 2;
-    padding-right: 15px;
-    color: black;
-    text-align: left;
+    padding: 30px;
 }
 
 .welcome img {
-    width: 100%;
-    max-height: 300px;
+    width: 100%;                    /* image takes the size of container */
+    max-height: 300px;              /* Limits size of image */
     object-fit: cover;
 }
 
 h2 {
-    font-weight: 500;
-    text-decoration: underline;
+    font-weight: 1000;               /* Adds emphasis to text  */
+    text-decoration: underline;     /* Underlines H2 texts */
 }
 
 .lineup {
     flex: 1;
-    background: #172d67;
-    color: white;
-    padding: 20px;
-    max-width: 30%;
-}
+    background-color: #172d67;
+    color: #fff;
+    padding: 1.5rem;
+    margin-top: 20px;
+  }
 
 .lineup h2 {
-    font-weight: 700;
-    text-decoration: underline;
+    font-weight: 1000;                /* Makes h2 headings bold in the lineup section */
+    text-decoration: underline;      /* Underlines h2 headings */
+}
+
+.lineup ul {
+    padding-left: 15px;
+  }
+
+.lineup li {
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 16px;
 }
 
 .Limages {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 40px;
 }
-
+    
 .Limages img {
-    width: 48%;
-    max-height: 300px;
-    object-fit: cover;
+    width: 48%;                      /* Sets width of images to 48% of container for side-by-side display */
+    height: auto;            
 }
 
 footer {
     background: #8c15e9;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
     margin-top: 20px;
 }

@@ -1,32 +1,44 @@
+/*Creates a soft blend Background*/
 body {
-    background-color: rgb(255, 247, 212);
+    background: linear-gradient(to right, #fff7d4, #ffe6b4);
+    margin: 0;
+    padding: 20px;                  
 }
-
+/* Centers the title and adds a bolded font to text */
 h1 {
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
+/* Centers all text under .ATA */
 .ATA {
 text-align: center;
 }
-
+/* Flexbox for Image Layout */
 .images {
 display: flex;
 justify-content: center;
 }
 
 img {
-    border: 5px solid gray;
+    border: 5px solid gray;             
     border-radius: 10px;
     max-width: 100%;
-    height: auto;
+    height: auto;                           /* Creates a Border Around Image and Allows interactability */
+    width: 500px;
+    height: 400px;
+    transition: width, height 1s;             /* Magnifies into image if hovered over by cursor */
 }
 
+img:hover {
+    width: 800px;                              /* Image Width and Height Changes if hovered over by cursor */
+    height: 500px;
+}
+
+/* Styling For Caption */
 figcaption {
     padding: 10px;
     margin: 20px;
-    background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);             /* gives caption White background */
     border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);        /* adds a shadow to caption */
 }

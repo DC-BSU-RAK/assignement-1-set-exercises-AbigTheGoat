@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Content</title>
+</head>
+
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #0a0a0a;
+    }
+    video {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    animation: glowPulse 1s infinite alternate ease-in-out;
+}
+
+    @keyframes glowPulse {
+    0% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 80px rgba(255, 255, 255, 1);
+    }
+}
+
+</style>
+</head>
+<body>
+
+<video controls autoplay loop poster="UIA Cat.webp">
+    <source src="SugarCat.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+</body>
+</html>
+
+<body>
+
+</body>
+</html>
