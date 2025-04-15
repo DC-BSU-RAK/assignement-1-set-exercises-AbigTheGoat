@@ -16,7 +16,7 @@ header {
 }
 
 nav ul {
-    list-style: none;                   /* Removes Bullet points in list */
+    list-style: none;                   /* Removes Bullet points in list */     
     padding: 0;
     margin: 0;
     display: flex;                      /* makes list items in a row */
